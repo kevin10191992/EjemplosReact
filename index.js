@@ -8,7 +8,7 @@ function Contador(props) {
   const [contador, setContador] = useState(props.inicial)
   return (
     <div>
-      <p>Contador: {contador}</p>
+      <p>Contador con Hooks: {contador}</p>
       <button onClick={() => { setContador(contador + 1) }}>Increment</button>
     </div>
   );
@@ -30,7 +30,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React',
+      name: 'Ejemplo React',
       entrys: []
 
     };
