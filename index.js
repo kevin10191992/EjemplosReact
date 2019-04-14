@@ -16,8 +16,8 @@ function Contador(props) {
 
 function Lista(props) {
 
-  const lista = props.lista.map((item) => {
-    return <li>{item.title}</li>
+  const lista = props.lista.map((item,index) => {
+    return <li key={index}>{item.title}</li>
   })
 
   return (
